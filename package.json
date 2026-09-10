@@ -1,0 +1,31 @@
+{
+  "name": "semantic-search",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node init && convex dev --start 'next dev'",
+    "typecheck": "tsc --noEmit",
+    "build": "node init && npm run typecheck && next build",
+    "start": "node init && next start",
+    "lint": "eslint . --ignore-pattern \"convex/_generated/**\""
+  },
+  "dependencies": {
+    "convex": "^1.44.0",
+    "next": "16.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@convex-dev/eslint-plugin": "^4.0.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.3.0",
+    "prettier": "^3.9.6",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
+  }
+}
