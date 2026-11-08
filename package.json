@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node init && convex dev --start 'next dev'",
+    "dev": "convex dev --start 'next dev'",
     "typecheck": "tsc --noEmit",
-    "build": "node init && npm run typecheck && next build",
-    "start": "node init && next start",
+    "build": "npm run typecheck && next build",
+    "start": "next start",
     "lint": "eslint . --ignore-pattern \"convex/_generated/**\""
   },
   "dependencies": {
